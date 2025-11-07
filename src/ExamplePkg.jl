@@ -3,14 +3,9 @@ module ExamplePkg
 using PlutoUI, PlutoTeachingTools, Random, Statistics, BenchmarkTools
 using Distances, LinearAlgebra, StatsBase, PyCall, LsqFit
 using LazyArrays, OhMyThreads, Test
+using FITSIO, Tables
 
 const scipy = pyimport("scipy")
-
-using Markdown
-using InteractiveUtils
-
-# ╔═╡ 4ae96412-738d-47b9-ac3b-564f64899c7e
-using FITSIO, Tables
 
 export GalaxyCatalog
 export fit_overdensity_field_parallel
