@@ -1,7 +1,7 @@
 using Pkg
 
 # 1. Activate local environment and set up Python for PyCall
-Pkg.activate("../")
+Pkg.activate("./")
 ENV["PYTHON"] = "" # Force PyCall to use its own Conda-managed Python
 
 # 2. Add all Julia and Python packages
@@ -11,7 +11,9 @@ Pkg.add([
     "PlutoUI", "PlutoTest", "PlutoTeachingTools", 
     "BenchmarkTools", "Distances", "StatsBase",
     "PyCall", "Conda", "LsqFit", "FITSIO", "Tables",
-    "LazyArrays", "OhMyThreads", "Test"
+    "LazyArrays", "OhMyThreads", "Test", "Random",
+    "Statistics", "LinearAlgebra", "Markdown",
+    "InteractiveUtils"
 ])
 
 Pkg.instantiate()

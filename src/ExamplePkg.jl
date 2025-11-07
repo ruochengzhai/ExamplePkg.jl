@@ -4,6 +4,8 @@ using PlutoUI, PlutoTeachingTools, Random, Statistics, BenchmarkTools
 using Distances, LinearAlgebra, StatsBase, PyCall, LsqFit
 using LazyArrays, OhMyThreads, Test
 using FITSIO, Tables
+using Markdown
+using InteractiveUtils
 
 const scipy = pyimport("scipy")
 
